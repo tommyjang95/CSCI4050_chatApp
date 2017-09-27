@@ -1,0 +1,468 @@
+/** Fonts **/
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Calibri');
+
+/** Global common css **/
+.body-content{
+  width: 100%;
+  background-color: #ededed;
+}
+
+.head{                
+    padding: 10px 20px 25px 90px;
+    background-color: #6C71F8;
+    color: white;
+    margin-bottom: 20px;
+    font-size: 230%;
+    font-weight: bold;
+    font-family: 'Calibri', sans-serif;
+}
+
+input:focus::-webkit-input-placeholder { color:transparent !important; }
+input:focus:-moz-placeholder { color:transparent !important; }
+
+/*** Header css ***/
+.dropbtn {
+    background-color: #fff;
+    color: #162c2d;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+	position: relative;
+    display: inline-block;
+    font-family: arial;
+	font-size: 13px;
+	font-weight: bold;
+	border: none;
+	color: #162c2d;
+	background: none;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    color: #05b5ba;
+}
+
+/*login button*/
+.btn{
+	background-color: #2c3e50;
+	border: none;
+	color: white;
+	padding: 8px 12px;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+/*login button position*/
+.position{
+	position: absolute;
+	top: 8px;
+	right: 37px;
+}
+
+
+/*** Footer css ***/
+footer{
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: #162c2d;
+	padding: 20px 0px;
+	padding-bottom: 40px;
+	margin-top: -10px;
+	margin-left: -10px;
+	margin-right: -10px;
+}
+
+.content{
+	font-family:'Roboto', sans-serif;
+	font-size: 10px;
+	text-align: center;
+	color: #fff;
+}
+
+
+/*** StudentProfileEdit css; uses css from StudentDashboard ***/
+.spe-container{
+  width: 80%;
+  height: 100%;
+  background-color: #ededed;
+  margin:0 auto;
+  padding: 1px 0px;
+  margin-left: 30%;
+  margin-top: -2.4%;
+}
+
+.jumbotron-spe{
+	margin-top: 100px;
+	height: 450px;
+	background-color: #fff;
+}
+
+#avatar{
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Official_portrait_of_Barack_Obama.jpg/170px-Official_portrait_of_Barack_Obama.jpg');
+    width: 80px;
+    height: 80px;
+    margin-left: -75px;
+    background-size: cover;
+	background-position: center;
+	margin-top: -12%;
+	overflow:hidden;
+    border-radius:50%;
+}
+
+#friendavatar{
+    background-image: url('https://www.biography.com/.image/t_share/MTE5NDg0MDU0ODEyNzIyNzAz/michelle-obama-thumb-2.jpg');
+    width: 80px;
+    height: 80px;
+    margin-left: 600px;
+    background-size: cover;
+	background-position: center;
+	margin-top: -7%;
+	overflow:hidden;
+    border-radius:50%;
+}
+
+.spe{
+	position: relative;
+	top: -20px;
+	left: calc(50% - 300px);
+	height: 150px;
+	width: 350px;
+	padding: 10px;
+	text-align: center;
+}
+
+.inline{
+	display: inline;
+}
+
+.wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto; /* the bottom margin is the negative value of the footer's height */
+}
+
+.spe input[name=firstname]{
+	width: 250px;
+	height: 30px;
+	background: #fff;
+	border: 1px solid #fff;
+	border-bottom-color: #b7b7b7;
+	border-bottom-width: 2px;
+	color: #b7b7b7;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	font-style: normal;
+	padding: 3px;
+	margin-top: -33%;
+	margin-left: -12%;
+	text-align: center;
+}
+
+.spe input[name=lastname]{
+	width: 250px;
+	height: 30px;
+	background: #fff;
+	border: 1px solid #fff;
+	border-bottom-color: #b7b7b7;
+	border-bottom-width: 2px;
+	color: #b7b7b7;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	font-style: normal;
+	padding: 3px;
+	margin-top: -33%;
+	margin-left: 90%;
+	text-align: center;
+}
+
+.spe input[type=email]{
+	width: 523px;
+	height: 30px;
+	background: #fff;
+	border: 1px solid #fff;
+	border-bottom-color: #b7b7b7;
+	border-bottom-width: 2px;
+	color: #b7b7b7;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	font-style: normal;
+	padding: 3px;
+	margin-top: -8%;
+	text-align: center;
+}
+
+.spe input[name=website]{
+	width: 523px;
+	height: 30px;
+	background: #fff;
+	border: 1px solid #fff;
+	border-bottom-color: #b7b7b7;
+	border-bottom-width: 2px;
+	color: #b7b7b7;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	font-style: normal;
+	padding: 3px;
+	margin-top: -8%;
+	text-align: center;
+}
+
+.spe input[name=oldpassword]{
+	width: 200px;
+	height: 30px;
+	background: #fff;
+	border: 1px solid #fff;
+	border-bottom-color: #b7b7b7;
+	border-bottom-width: 2px;
+	color: #b7b7b7;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	font-style: normal;
+	padding: 3px;
+	margin-top: -32%;
+	margin-left: -12%;
+	text-align: center;
+}
+
+.spe input[name=newpassword]{
+	width: 200px;
+	height: 30px;
+	background: #fff;
+	border: 1px solid #fff;
+	border-bottom-color: #b7b7b7;
+	border-bottom-width: 2px;
+	color: #b7b7b7;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	font-style: normal;
+	padding: 3px;
+	margin-top: -43%;
+	margin-left: 80%;
+	text-align: center;
+}
+
+.spe input[name=confirmpassword]{
+	width: 200px;
+	height: 30px;
+	background: #fff;
+	border: 1px solid #fff;
+	border-bottom-color: #b7b7b7;
+	border-bottom-width: 2px;
+	color: #b7b7b7;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	font-style: normal;
+	padding: 3px;
+	margin-top: -64%;
+	margin-left: 280%;
+	text-align: center;
+}
+
+.spe input[type=checkbox]{
+  height: 10px;
+  background-color: #05b5ba;
+  border-color: #fff; 
+  margin-top: -10%;
+  margin-left: -75%;
+}
+
+#addimage{           
+    width: 150px;
+	height: 30px;
+	background: #05b5ba;
+	border: 1px solid #fff;
+	cursor: pointer;
+	border-radius: 2px;
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+	font-weight: normal;
+	padding: 0px;
+	margin-top: -130px;
+	margin-left: 15%;
+	text-align: center;
+}
+
+#savechangesbtn{           
+    width: 200px;
+	height: 35px;
+	background: #05b5ba;
+	border: 1px solid #fff;
+	cursor: pointer;
+	border-radius: 2px;
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	font-weight: 500;
+	padding: 0px;
+	margin-top: -5px;
+	margin-left: -45%;
+	text-align: center;
+	border-radius: 12px;
+}
+
+
+.online-home-pos{
+      position: absolute;
+      top: 100px;
+      left: 10px;
+    }
+
+/** student dashboard page **/
+
+    .dashboard table.space{
+    border-collapse: separate;
+    border-spacing: 15px;
+    }
+    .dashboard a {color:#05b5ba;}      /* unvisited link */
+    .dashboard a:visited {color:#05b5ba;}  /* visited link */
+    .dashboard a:hover {color:#05b5ba;}  /* mouse over link */
+    .dashboard a:active {color:#05b5ba;}  /* selected link */
+    .dashboard tr{
+      height: 80px;
+      width: 20px;
+    }
+    .dashboard table{
+      border-collapse: collapse;
+    }
+    .dashboard table, td, th {
+    border: 8px solid #ededed;
+    }
+    .dashboard .left-menu {
+    padding:20px 50px 50px 30px;
+    }
+  
+    .carousel-border {
+      border-style: solid;
+      border-width: 12px;
+      color: white;
+    }
+    .menu-item {
+    background-color: white;
+    margin: 2px;
+    width: 480px;
+    padding: 8px 0px 0px 15px;
+    }
+
+    .menu-item {
+    height: 33px;
+    }
+
+    .left-menu{
+    width: 300px;
+    }
+
+    .subhead{
+    background: black;
+    background-color: #2c3e50;
+    color: white;
+    font-size: 150%;
+    font-family: 'Roboto', sans-serif;
+    text-align :left;
+    }
+
+    .subhead-width{
+    width: 482px;
+    height: 65px;
+    padding: 10px 30px 10px 15px;
+    }
+
+    .online-pos{
+      position: relative;
+      top: 20px;
+      left: 185px;
+    }
+
+    .reward{
+      width: 116px;
+      height:95px;
+      background-color: white;
+    }
+    .rewards-width{
+    width: 225px;
+    height: 50px;
+    padding: 0px 30px 10px 15px;
+    }
+
+    .rewards-pos{
+      position: absolute;
+      top: 410px;
+      left: 562px;
+    }
+
+    .rewards-head{
+      position: absolute;
+      top: 360px;
+      left: 570px;
+    }
+
+    .cert-head{
+      position: absolute;
+      top: 360px;
+      left: 820px;
+    }
+
+    .cert-pos{
+      position: absolute;
+      top: 410px;
+      left: 813px;     
+    }
+
+    .cert-width{
+    width: 225px;
+    height: 50px;
+    padding: 10px 30px 10px 15px;
+    }
+
+
+    #head-button{
+      width: 100px;
+      height: 20px;
+      background: #05b5ba;
+      border: 1px ;
+      cursor: pointer;
+      color: #fff;
+      font-family: 'Roboto', sans-serif;
+      font-size: 12px;
+      font-weight: 500;
+      padding: 0px;
+      text-align: center;
+      border-radius: 8px;
+      float: right;
+     }
